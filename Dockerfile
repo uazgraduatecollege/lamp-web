@@ -1,5 +1,10 @@
 # Use Ubuntu Xenial
 FROM ubuntu:16.04
+MAINTAINER University of Arizona Graduate College IT <help@grad.arizona.edu>
+
+# Set timezone info
+ENV TZ=America/Phoenix
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # install LAMP web dependencies
 RUN apt-get update && apt-get install -y \
@@ -22,3 +27,6 @@ RUN apt-get update && apt-get install -y \
   php-soap \
   php-xml
 
+# Install composer
+RUN curl -sLS https://getcomposer.org/installer | \
+  php -- --install-dir=/usr/local/bin/ --filename=composer
