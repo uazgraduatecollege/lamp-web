@@ -1,6 +1,11 @@
 # Use Ubuntu Xenial
 FROM ubuntu:16.04
-MAINTAINER University of Arizona Graduate College IT <help@grad.arizona.edu>
+
+# Metadata
+LABEL org.label-schema.name = "UA Graduate College: LAMP Web"
+LABEL org.label-schema.description = "The web / LAmP components of a full LAMP stack environment. Includes only MySQL client libs."
+LABEL org.label-schema.vcs-url = "https://github.com/uazgraduatecollege/lamp-web"
+LABEL org.label-schema.vendor = "University of Arizona Graduate College IT"
 
 # Set timezone info
 ENV TZ=America/Phoenix
