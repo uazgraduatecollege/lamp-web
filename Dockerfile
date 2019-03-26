@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 
 # Metadata
 LABEL org.label-schema.name = "UA Graduate College: LAMP Web"
-LABEL org.label-schema.description = "The web / LAmP components of a full LAMP stack environment. Includes only MySQL client libs."
+LABEL org.label-schema.description = "The LAmP (web) components of a full LAMP stack environment. Includes only MySQL client libs."
 LABEL org.label-schema.vcs-url = "https://github.com/uazgraduatecollege/lamp-web"
 LABEL org.label-schema.vendor = "University of Arizona Graduate College IT"
 
@@ -30,7 +30,9 @@ RUN apt-get update && apt-get install -y \
   php-memcached \
   php-mysql \
   php-soap \
-  php-xml
+  php-xml \
+  unzip \
+  zip
 
 # Install composer
 RUN curl -sLS https://getcomposer.org/installer | \
