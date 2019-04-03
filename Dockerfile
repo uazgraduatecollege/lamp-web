@@ -14,11 +14,12 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 # install LAMP web dependencies
 RUN apt-get update && apt-get install -y \
   apache2 \
+  curl \
   git \
-  mysql-client \
   libapache2-mod-php7.0 \
   libapache2-mod-xsendfile \
   memcached \
+  mysql-client \
   openssl \
   php7.0 \
   php-curl \
