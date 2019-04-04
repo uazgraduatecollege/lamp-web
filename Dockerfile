@@ -27,6 +27,7 @@ RUN apt-get update && apt-get install -y \
   php-intl \
   php-json \
   php-ldap \
+  php-mbstring \
   php-mcrypt \
   php-memcached \
   php-mysql \
