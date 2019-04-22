@@ -1,6 +1,7 @@
 # lamp-web
 
 A base environment for uazgradcoll/lamp-web projects.
+
 Multilple PHP version are supported through the following tags:
 
 - latest: Same as php-7.3
@@ -8,6 +9,8 @@ Multilple PHP version are supported through the following tags:
 - php-7.2: Uses [Ondřej Surý's PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php)
 - php-7.1: Uses [Ondřej Surý's PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php)
 - php-7.0: Uses the default Ubuntu 16.04LTS packages provided by Canonical
+
+More information on the [uazgraduatecollege/lamp-web on Docker Hub](https://cloud.docker.com/u/uazgraduatecollege/repository/docker/uazgraduatecollege/lamp-web).
 
 ## Usage
 
