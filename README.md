@@ -1,12 +1,16 @@
 # lamp-web
 
-A base environment for uazgradcoll/lamp-web projects
+A base environment for uazgradcoll/lamp-web projects.
 
-## Build
+Multilple PHP version are supported through the following tags:
 
-```
-$ docker build -t uazgraduatecollege/lamp-web:latest .
-```
+- latest: Same as php-7.3
+- php-7.3: Uses [Ondřej Surý's PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php)
+- php-7.2: Uses [Ondřej Surý's PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php)
+- php-7.1: Uses [Ondřej Surý's PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php)
+- php-7.0: Uses the default Ubuntu 16.04LTS packages provided by Canonical
+
+More information on the [uazgraduatecollege/lamp-web on Docker Hub](https://cloud.docker.com/u/uazgraduatecollege/repository/docker/uazgraduatecollege/lamp-web).
 
 ## Usage
 
@@ -16,6 +20,14 @@ Intended primarily as a base image from which to create other application images
 FROM uazgraduatecollege/lamp-web:latest
 
 # Do something
+```
+
+## Build
+
+Building is not necessary in most cases as the images can be accessed directly from Docker Hub, however:
+
+```
+$ docker build -t uazgraduatecollege/lamp-web:latest .
 ```
 
 ## License
