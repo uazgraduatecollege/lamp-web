@@ -30,11 +30,14 @@ RUN export LC_ALL=en_US.UTF-8 && \
   add-apt-repository ppa:ondrej/php && \
   apt-get update
 
-# install LAMP web dependencies
+# install apache2
 RUN apt-get install -y \
   apache2 \
+  libapache2-mod-xsendfile
+
+# install PHP
+RUN apt-get install -y \
   libapache2-mod-php7.1 \
-  libapache2-mod-xsendfile \
   php7.1 \
   php7.1-curl \
   php7.1-imagick \
