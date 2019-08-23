@@ -30,11 +30,14 @@ RUN export LC_ALL=en_US.UTF-8 && \
   add-apt-repository ppa:ondrej/php && \
   apt-get update
 
-# install LAMP web dependencies
-RUN apt-get update && apt-get install -y \
+# install apache2
+RUN apt-get install -y \
   apache2 \
+  libapache2-mod-xsendfile
+
+# install PHP
+RUN apt-get install -y \
   libapache2-mod-php7.3 \
-  libapache2-mod-xsendfile \
   php7.3 \
   php7.3-curl \
   php7.3-imagick \
@@ -45,7 +48,7 @@ RUN apt-get update && apt-get install -y \
   php7.3-memcached \
   php7.3-mysql \
   php7.3-soap \
-  php7.2-xml \
+  php7.3-xml \
   php-sodium
 
 # Install composer
