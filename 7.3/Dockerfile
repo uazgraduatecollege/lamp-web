@@ -49,7 +49,7 @@ RUN apt-get install -y \
   php7.3-mysql \
   php7.3-soap \
   php7.3-xml \
-  php-sodium
+  php7.3-yaml
 
 # Install composer
 RUN curl -sLS https://getcomposer.org/installer | \
