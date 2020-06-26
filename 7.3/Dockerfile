@@ -1,5 +1,5 @@
 # Use Ubuntu Xenial
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 # Metadata
 LABEL org.label-schema.name = "UA Graduate College: LAMP Web"
@@ -11,8 +11,9 @@ LABEL org.label-schema.vendor = "University of Arizona Graduate College IT"
 ENV TZ=America/Phoenix
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-# install some base packages
+# install base base packages
 RUN apt-get update && apt-get install -y \
+  clamav-daemon \
   curl \
   git \
   language-pack-en-base \
@@ -57,3 +58,4 @@ RUN curl -sLS https://getcomposer.org/installer | \
 
 # Metadata
 LABEL org.label-schema.tag = "php-7.3"
+

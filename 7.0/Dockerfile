@@ -13,6 +13,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # install some base packages
 RUN apt-get update && apt-get install -y \
+  clamav-daemon \
   curl \
   git \
   language-pack-en-base \
