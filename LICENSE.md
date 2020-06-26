@@ -1,4 +1,4 @@
-This image contains the following OpenSource software packages and is subject to their various licenses:
+These images contain the following open-source software packages and are subject to their various licenses:
 
 - [Ubuntu OS](https://www.ubuntu.com/about/about-ubuntu/licensing)
 - [Apache HTTPD](https://www.apache.org/licenses/) - Apache License version 2.0
