@@ -42,6 +42,9 @@ RUN apt-get update && apt-get install -y \
   php7.4-xml \
   php7.4-yaml
 
+# initialize the ClamAV db
+RUN /usr/bin/freshclam
+
 # Install composer
 RUN curl -sLS https://getcomposer.org/installer | \
   php -- --install-dir=/usr/local/bin/ --filename=composer
