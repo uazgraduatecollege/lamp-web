@@ -40,7 +40,8 @@ RUN apt-get update && apt-get install -y \
   php7.4-mysql \
   php7.4-soap \
   php7.4-xml \
-  php7.4-yaml
+  php7.4-yaml \
+  php-pcov
 
 # initialize the ClamAV db
 RUN /usr/bin/freshclam
