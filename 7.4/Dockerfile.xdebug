@@ -1,3 +1,12 @@
+# Use Ubuntu Xenial-based lamp-web images
 FROM uazgraduatecollege/lamp-web:php-7.4
 
-RUN apt update && apt install php-xdebug -y && apt install vim -y
+# Install dev dependencies and vim
+RUN apt update && apt install -y \
+      php-pcov \
+      php-xdebug \
+      vim
+
+# Metadata
+LABEL org.label-schema.tag = "php-7.4-xdebug"
+
