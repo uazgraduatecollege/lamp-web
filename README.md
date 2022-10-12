@@ -6,6 +6,10 @@ Multilple PHP version are supported through the following tags:
 
 - `latest`: Same as php-7.4
 
+Base OS: Ubuntu 22.04LTS
+
+- `php-8.1`: Uses the default Ubuntu 22.04LTS packages provided by Canonical
+
 Base OS: Ubuntu 20.04LTS
 
 - `php-7.4`: Uses the default Ubuntu 20.04LTS packages provided by Canonical
