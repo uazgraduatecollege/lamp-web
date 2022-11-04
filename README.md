@@ -4,25 +4,26 @@ A base environment for uazgradcoll/lamp-web projects.
 
 Multilple PHP version are supported through the following tags:
 
-- `latest`: Same as php-7.4
+- `php-7.4`, `latest`  
+  Base OS: Ubuntu 20.04LTS
 
-Base OS: Ubuntu 22.04LTS
+- `php-8.1`: Uses the default Ubuntu 22.04LTS packages provided by Canonical  
+  Base OS: Ubuntu 22.04LTS
 
-- `php-8.1`: Uses the default Ubuntu 22.04LTS packages provided by Canonical
+- `php-7.3`: Uses [Ondřej Surý's PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php)  
+  Base OS: Ubuntu 18.04LTS
 
-Base OS: Ubuntu 20.04LTS
+- `php-7.2`: Uses the default Ubuntu 18.04LTS packages provided by Canonical  
+  Base OS: Ubuntu 18.04LTS
 
-- `php-7.4`: Uses the default Ubuntu 20.04LTS packages provided by Canonical
+- `php-7.1`: Uses [Ondřej Surý's PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php)  
+  Base OS: Ubuntu 16.04LTS
 
-Base OS: Ubuntu 18.04LTS
+- `php-7.0`: Uses the default Ubuntu 16.04LTS packages provided by Canonical  
+  Base OS: Ubuntu 16.04LTS
 
-- `php-7.3`: Uses [Ondřej Surý's PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php)
-- `php-7.2`: Uses the default Ubuntu 18.04LTS packages provided by Canonical
-
-Base OS: Ubuntu 16.04LTS
-
-- `php-7.1`: Uses [Ondřej Surý's PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php)
-- `php-7.0`: Uses the default Ubuntu 16.04LTS packages provided by Canonical
+- `amz-php7.4`: Uses the official [Docker Hub image for Amazon Linux](https://hub.docker.com/_/amazonlinux)  
+  Base OS: Amazon Linux 2
 
 More information on the [uazgraduatecollege/lamp-web on Docker Hub](https://cloud.docker.com/u/uazgraduatecollege/repository/docker/uazgraduatecollege/lamp-web).
 
