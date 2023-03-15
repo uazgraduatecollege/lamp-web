@@ -1,5 +1,5 @@
 # Use Ubuntu Xenial-based lamp-web images
-FROM uazgraduatecollege/lamp-web:php-8.1
+FROM public.ecr.aws/r6v8y4m7/lamp-web:php-8.1
 
 # Install dev dependencies and vim
 RUN apt update && apt install -y \
