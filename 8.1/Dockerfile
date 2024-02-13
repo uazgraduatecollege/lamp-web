@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y \
   language-pack-en-base \
   memcached \
   mysql-client \
+  redis \
   software-properties-common \
   openssl \
   unzip \
